@@ -2,7 +2,7 @@ const express = require("express");
 const axios = require("axios");
 const router = express.Router();
 
-const survey_ip = "ip-172-31-37-162.ap-southeast-1.compute.internal:3000";
+const survey_ip = "http://ip-172-31-37-162.ap-southeast-1.compute.internal:3000";
 
 router.post("/create", async (req, res) => {
     try {
