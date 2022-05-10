@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
 app.use("/user", require("./routes/user"));
 app.use("/course", require("./routes/course"));
 app.use("/survey", require("./routes/survey"));
+app.use("/live", require("./routes/live"));
 
 // set port, listen for requests
 const PORT = 3000;
