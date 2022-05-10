@@ -24,7 +24,7 @@ router.post("/create", async (req, res) => {
 
 router.put("/studyprogress", async (req, res) => {
     try {
-        const response = await axios.post(course_ip + "/course/create", req.body, { params: req.query });
+        const response = await axios.put(course_ip + "/course/studyprogress", req.body, { params: req.query });
         return res.json(response.data);
     } catch (err) {
         return res.status(err.response.status || 404).json(err.response.data || { message: "not found" });
